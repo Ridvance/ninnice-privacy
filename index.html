@@ -1,150 +1,223 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ninnice - Privacy Policy</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --primary: #8B5CF6;
-            --bg: #F9FAFB;
-            --text: #1F2937;
-            --text-muted: #6B7280;
-        }
-        body {
-            font-family: 'Inter', -apple-system, sans-serif;
-            line-height: 1.7;
-            background-color: var(--bg);
-            color: var(--text);
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-        }
-        .container {
-            max-width: 800px;
-            width: 100%;
-            padding: 40px 20px;
-            background: white;
-            min-height: 100vh;
-            box-shadow: 0 0 50px rgba(0,0,0,0.03);
-        }
-        .lang-switcher {
-            display: flex;
-            gap: 10px;
-            justify-content: flex-end;
-            margin-bottom: 40px;
-        }
-        button {
-            padding: 8px 16px;
-            border-radius: 20px;
-            border: 1px solid #E5E7EB;
-            background: white;
-            cursor: pointer;
-            font-size: 14px;
-            font-weight: 600;
-            transition: all 0.2s;
-        }
-        button:hover { background: #F3F4F6; }
-        button.active {
-            background: var(--primary);
-            color: white;
-            border-color: var(--primary);
-        }
-        h1 { font-size: 32px; font-weight: 800; color: var(--primary); margin-bottom: 30px; }
-        h2 { font-size: 20px; font-weight: 700; margin-top: 30px; border-bottom: 1px solid #F3F4F6; padding-bottom: 10px; }
-        ul { padding-left: 20px; }
-        footer { margin-top: 60px; padding-top: 20px; border-top: 1px solid #F3F4F6; color: var(--text-muted); font-size: 14px; }
-        /* Language handling */
-        .lang-section { display: none; }
-        .lang-section.active { display: block; }
-    </style>
+<meta charset="UTF-8">
+<title>Ninnice Privacy Policy</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    margin: 40px;
+    background-color: #ffffff;
+    color: #333333;
+}
+
+h1, h2 {
+    color: #2c3e50;
+}
+
+ul {
+    margin-left: 20px;
+}
+
+footer {
+    margin-top: 40px;
+    font-size: 0.9em;
+    color: #666;
+}
+
+.lang-switch {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 6px 12px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    background-color: #2c3e50;
+    color: white;
+    margin-left: 6px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+</style>
 </head>
+
 <body>
 
-<div class="container">
-    <div class="lang-switcher">
-        <button id="btn-tr" onclick="setLang('tr')">🇹🇷 Türkçe</button>
-        <button id="btn-en" onclick="setLang('en')">🇬🇧 English</button>
-    </div>
-
-    <!-- TÜRKÇE İÇERİK -->
-    <div id="tr-content" class="lang-section">
-        <h1>Gizlilik Politikası</h1>
-        <p>Ninnice olarak kullanıcılarımızın gizliliğine büyük önem veriyoruz. Bu Gizlilik Politikası, Ninnice mobil uygulamasının kullanıcı verilerini nasıl işlediğini açıklamaktadır.</p>
-
-        <h2>1. Toplanan Veriler</h2>
-        <p>Ninnice uygulaması <strong>herhangi bir kişisel veri toplamaz</strong>. Uygulama:</p>
-        <ul>
-            <li>Kullanıcıdan ad, e-posta, telefon numarası gibi kişisel bilgiler istemez</li>
-            <li>Konum bilgisi toplamaz</li>
-            <li>Cihaz kimliği, reklam kimliği gibi tanımlayıcıları toplamaz</li>
-            <li>Üçüncü taraflarla veri paylaşımı yapmaz</li>
-        </ul>
-
-        <h2>2. Çocukların Gizliliği</h2>
-        <p>Ninnice, 5 yaş ve altındaki çocuklara yönelik bir uygulamadır ve Google Play Aile Politikası’na tam uyum sağlar. Çocuklardan bilerek hiçbir kişisel veri toplamaz.</p>
-
-        <h2>3. Üçüncü Taraf Hizmetler</h2>
-        <p>Ninnice uygulaması herhangi bir üçüncü taraf SDK, reklam ağı veya analiz aracı kullanmaz.</p>
-
-        <h2>4. İletişim</h2>
-        <p>Soru ve geri bildirimleriniz için: <strong>ninnicecom@gmail.com</strong></p>
-        
-        <footer>Son güncelleme: 21 Ocak 2026</footer>
-    </div>
-
-    <!-- ENGLISH CONTENT -->
-    <div id="en-content" class="lang-section">
-        <h1>Privacy Policy</h1>
-        <p>At Ninnice, we highly value user privacy. This Privacy Policy explains how the Ninnice mobile application handles user data.</p>
-
-        <h2>1. Data Collection</h2>
-        <p>Ninnice <strong>does not collect any personal data</strong>. The app:</p>
-        <ul>
-            <li>Does not request name, email, or phone number</li>
-            <li>Does not collect location data</li>
-            <li>Does not collect device identifiers or ad IDs</li>
-            <li>Does not share data with third parties</li>
-        </ul>
-
-        <h2>2. Children's Privacy</h2>
-        <p>Ninnice is designed for children under 5 years old and complies with Google Play Families Policy. It does not knowingly collect any data from children.</p>
-
-        <h2>3. Third-Party Services</h2>
-        <p>Ninnice does not use any third-party SDKs, ads, or analytics tools.</p>
-
-        <h2>4. Contact</h2>
-        <p>For any questions: <strong>ninnicecom@gmail.com</strong></p>
-        
-        <footer>Last updated: January 21, 2026</footer>
-    </div>
+<!-- LANGUAGE SWITCH -->
+<div class="lang-switch">
+    <button onclick="setLang('tr')">🇹🇷 Türkçe</button>
+    <button onclick="setLang('en')">🇬🇧 English</button>
 </div>
 
+<!-- ========================= -->
+<!-- TÜRKÇE -->
+<!-- ========================= -->
+<div id="tr-content">
+
+<h1>Ninnice Gizlilik Politikası</h1>
+
+<p>
+Ninnice olarak kullanıcılarımızın gizliliğine büyük önem veriyoruz.
+Bu Gizlilik Politikası, Ninnice mobil uygulamasının kullanıcı verilerini nasıl işlediğini açıklar.
+</p>
+
+<h2>1. Toplanan Veriler</h2>
+<p>
+Ninnice uygulaması <strong>herhangi bir kişisel veri toplamaz</strong>.
+</p>
+
+<ul>
+<li>Ad, e-posta, telefon numarası gibi bilgiler talep edilmez</li>
+<li>Konum bilgisi toplanmaz</li>
+<li>Cihaz kimliği veya reklam kimliği kullanılmaz</li>
+<li>Kullanıcı davranışı takip edilmez</li>
+<li>Hiçbir veri üçüncü taraflarla paylaşılmaz</li>
+</ul>
+
+<h2>2. Çocukların Gizliliği</h2>
+<p>
+Ninnice, <strong>5 yaş ve altındaki çocuklara</strong> yönelik tasarlanmıştır ve Google Play Aile Politikası ile uyumludur.
+</p>
+
+<p>
+Uygulama çocuklardan bilerek hiçbir kişisel veri toplamaz.
+</p>
+
+<h2>3. Üçüncü Taraf Hizmetler</h2>
+<p>
+Ninnice:
+</p>
+<ul>
+<li>Reklam SDK’sı kullanmaz</li>
+<li>Analitik araç kullanmaz</li>
+<li>Üçüncü taraf veri paylaşımı yapmaz</li>
+</ul>
+
+<h2>4. Veri Güvenliği</h2>
+<p>
+Uygulama veri toplamadığı için veri depolama veya aktarım riski bulunmamaktadır.
+</p>
+
+<h2>5. Değişiklikler</h2>
+<p>
+Bu Gizlilik Politikası zaman zaman güncellenebilir. Güncellemeler bu sayfada yayınlanır.
+</p>
+
+<h2>6. İletişim</h2>
+<p>
+Sorularınız için:
+</p>
+
+<p><strong>Email:</strong> ninnicecom@gmail.com</p>
+
+<footer>
+<p>Son güncelleme: 21 Ocak 2026</p>
+</footer>
+
+</div>
+
+<!-- ========================= -->
+<!-- ENGLISH -->
+<!-- ========================= -->
+<div id="en-content" style="display:none;">
+
+<h1>Ninnice Privacy Policy</h1>
+
+<p>
+At Ninnice, we highly value user privacy.
+This Privacy Policy explains how the Ninnice mobile application handles user data.
+</p>
+
+<h2>1. Data Collection</h2>
+<p>
+Ninnice <strong>does not collect any personal data</strong>.
+</p>
+
+<ul>
+<li>No name, email, or phone number is requested</li>
+<li>No location data is collected</li>
+<li>No device identifiers or ad IDs are used</li>
+<li>No user tracking is performed</li>
+<li>No data is shared with third parties</li>
+</ul>
+
+<h2>2. Children's Privacy</h2>
+<p>
+Ninnice is designed for <strong>children under 5 years old</strong> and complies with Google Play Families Policy.
+</p>
+
+<p>
+The app does not knowingly collect any personal data from children.
+</p>
+
+<h2>3. Third-Party Services</h2>
+<p>
+Ninnice:
+</p>
+<ul>
+<li>Does not use ads</li>
+<li>Does not use analytics tools</li>
+<li>Does not share data with third parties</li>
+</ul>
+
+<h2>4. Data Security</h2>
+<p>
+Since no data is collected, there is no storage or transfer risk.
+</p>
+
+<h2>5. Changes</h2>
+<p>
+This policy may be updated from time to time. Updates will be published on this page.
+</p>
+
+<h2>6. Contact</h2>
+<p>
+For any questions:
+</p>
+
+<p><strong>Email:</strong> ninnicecom@gmail.com</p>
+
+<footer>
+<p>Last updated: January 21, 2026</p>
+</footer>
+
+</div>
+
+<!-- ========================= -->
+<!-- SCRIPT -->
+<!-- ========================= -->
 <script>
-    function setLang(lang) {
-        // İçerikleri gizle/göster
-        document.querySelectorAll('.lang-section').forEach(el => el.classList.remove('active'));
-        document.getElementById(lang + '-content').classList.add('active');
+function setLang(lang) {
+    document.getElementById('tr-content').style.display = (lang === 'tr') ? 'block' : 'none';
+    document.getElementById('en-content').style.display = (lang === 'en') ? 'block' : 'none';
+    localStorage.setItem('lang', lang);
+}
 
-        // Buton stillerini güncelle
-        document.querySelectorAll('.lang-switcher button').forEach(el => el.classList.remove('active'));
-        document.getElementById('btn-' + lang).classList.add('active');
-
-        // Sayfa dilini güncelle
-        document.documentElement.lang = lang;
+function detectLang() {
+    let saved = localStorage.getItem('lang');
+    if (saved) {
+        setLang(saved);
+        return;
     }
 
-    // Otomatik dil algılama
-    const userLang = navigator.language || navigator.userLanguage; 
+    let userLang = navigator.language || navigator.userLanguage;
+
     if (userLang.startsWith('tr')) {
         setLang('tr');
     } else {
         setLang('en');
     }
+}
+
+detectLang();
 </script>
 
 </body>
