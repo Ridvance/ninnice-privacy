@@ -75,9 +75,9 @@ Bu süreçte satın alma durumu, abonelik ürünü, işlem/abonelik tanımlayıc
 Ninnice uygulaması:
 </p>
 <ul>
-    <li>Kullanıcıdan ad, e-posta, telefon numarası gibi kişisel bilgiler istemez</li>
+    <li>Temel kullanım için e-posta veya telefon numarası gerektirmez</li>
     <li>Konum bilgisi toplamaz</li>
-    <li>Cihaz kimliği, reklam kimliği veya benzeri tanımlayıcıları toplamaz</li>
+    <li>Reklam hedefleme amacıyla reklam kimliği kullanmaz; abonelik sağlayıcısı satın alma ve uygulama kullanıcı tanımlayıcılarını işleyebilir</li>
     <li>Reklam ağı veya davranışsal analiz aracı kullanmaz</li>
     <li>Uyku günlüğü ve rutin verilerinizi satmaz</li>
 </ul>
@@ -88,7 +88,7 @@ Ninnice, ebeveynlerin bebeklerinin uyku rutinini desteklemek için kullandığı
 Uygulama çocukların doğrudan etkileşimli kullanımına yönelik oyun veya sosyal içerik barındırmaz.
 </p>
 <p>
-Uygulama, çocuklardan veya ebeveynlerden hiçbir kişisel veri toplamaz veya işlemez.
+Uygulama çocuklardan doğrudan hesap veya iletişim bilgisi istemez. Ebeveynlerin girdiği bebek adı, uyku kayıtları ve tercihler cihazda işlenir. Abonelik bilgileri aşağıda belirtilen sağlayıcılar tarafından işlenir.
 </p>
 
 <h2>3. Üçüncü Taraf Hizmetler</h2>
@@ -101,6 +101,9 @@ RevenueCat yalnızca abonelik durumunu doğrulamak, premium erişimi açmak ve s
 Ninnice reklam ağı, sosyal takip SDK'sı veya davranışsal analitik aracı kullanmaz.
 </p>
 
+<h2>Mikrofon ve Akıllı Dinleme</h2>
+<p>Desteklenen iPhone ve iPad cihazlarında, kullanıcı Akıllı Dinleme'yi başlattığında mikrofon sesi Apple SoundAnalysis ile cihaz üzerinde sınıflandırılır. Bağımsız Akıllı Dinleme analizinde ses dosyası kaydedilmez ve ses sunucuya gönderilmez. Eşleşmiş cihazla canlı dinlemede analiz aynı ses akışından yapılır; aşağıdaki canlı iletim açıklaması geçerlidir. Dinleme durdurulduğunda mikrofon analizi kapanır. Mikrofon izni cihaz ayarlarından geri alınabilir.</p>
+<p>Ayrıca kullanıcı kendi sesini ninni olarak kaydedebilir. Bu kayıt cihazda saklanır ve kayıt ekranından silinebilir. İsteğe bağlı Dinleme ve Eşleştirme oturumunda Firebase anonim kimliği ve Firestore bağlantı verileri (cihaz rolleri, süreli kod, zaman damgaları ve WebRTC bağlantı bilgileri) işlenir. Canlı ses WebRTC ile eşleşen cihazlar arasında şifreli olarak iletilir; Ninnice sesi kaydetmez veya Firestore’da saklamaz. Bağlantı kurmak için STUN ve yapılandırılmışsa TURN sunucuları IP adresi gibi ağ bilgilerini işleyebilir. TURN erişimi yapılandırıldığında Firebase App Check, isteğin gerçek uygulamadan geldiğini doğrulamak için uygulama ve cihaz doğrulama bilgilerini işler. Ağlama uyarıları eşleşmiş cihaza şifreli bağlantı üzerinden iletilir. Ekrandan çıkmak veya oturumu bitirmek mikrofonu ve bağlantıyı kapatır; bu işlem sunucudaki bağlantı metaverilerini otomatik olarak silmez. Bulut verilerinizin silinmesi için iletişim adresimizden talepte bulunabilirsiniz.</p>
 <h2>4. Veri Güvenliği</h2>
 <p>
 Yerel uyku günlüğü ve tercih verileri cihazınızda tutulur. Abonelik doğrulama bilgileri App Store, Google Play ve RevenueCat altyapısı üzerinden işlenir.
@@ -122,7 +125,7 @@ Bu Gizlilik Politikası ile ilgili sorularınız için bizimle aşağıdaki e-po
 </p>
 
 <footer>
-    <p>Son güncelleme: 28 Haziran 2026</p>
+    <p>Son güncelleme: 10 Eylül 2026</p>
 </footer>
 
 </div>
@@ -152,9 +155,9 @@ During this process, purchase status, subscription product, transaction/subscrip
 The application:
 </p>
 <ul>
-    <li>Does not request personal information such as name, email, or phone number</li>
+    <li>Does not require an email address or phone number for the core experience</li>
     <li>Does not collect location data</li>
-    <li>Does not collect device IDs, advertising IDs, or similar identifiers</li>
+    <li>Does not use advertising identifiers for ad targeting; the subscription provider may process purchase and app-user identifiers</li>
     <li>Does not use ad networks or behavioral analytics tools</li>
     <li>Does not sell your sleep journal or routine data</li>
 </ul>
@@ -165,7 +168,7 @@ Ninnice is a parenting tool used by parents to support their baby's sleep routin
 The application does not contain games or social content for direct interactive use by children.
 </p>
 <p>
-The application does not collect or process any personal data from children or parents.
+The application does not request accounts or contact details directly from children. Baby names, sleep records and preferences entered by parents are processed on the device. Subscription information is processed by the providers described below.
 </p>
 
 <h2>3. Third-Party Services</h2>
@@ -178,6 +181,9 @@ RevenueCat is used only to validate subscription status, unlock premium access, 
 Ninnice does not use ad networks, social tracking SDKs, or behavioral analytics tools.
 </p>
 
+<h2>Microphone and Smart Listening</h2>
+<p>On supported iPhones and iPads, microphone audio is classified on-device using Apple SoundAnalysis when the user starts Smart Listening. Standalone Smart Listening does not create audio recordings or upload audio. During paired live monitoring, the same audio stream is analyzed; the live transmission description below applies. Stopping listening ends microphone analysis. Microphone permission can be revoked in device settings.</p>
+<p>Users may also record their own voice as a lullaby. This recording remains on the device and can be deleted from the recording screen. Optional Listen &amp; Pair sessions use Firebase anonymous authentication and Firestore connection metadata (device roles, expiring code, timestamps and WebRTC signaling). Live audio is encrypted in transit between paired devices using WebRTC; Ninnice does not record it or store it in Firestore. STUN and configured TURN services may process network information such as IP addresses to establish the connection. When relay access is configured, Firebase App Check processes app/device attestation information to verify requests come from the app. Cry alerts are sent to the paired device over the encrypted connection. Leaving the screen or ending the session closes the microphone and connection; it does not automatically delete server-side connection metadata. Contact us to request deletion of cloud data.</p>
 <h2>4. Data Security</h2>
 <p>
 Local sleep journal and preference data stay on your device. Subscription validation information is processed through App Store, Google Play, and RevenueCat infrastructure.
@@ -199,7 +205,7 @@ For questions regarding this Privacy Policy, you can contact us via the followin
 </p>
 
 <footer>
-    <p>Last updated: June 28, 2026</p>
+    <p>Last updated: September 10, 2026</p>
 </footer>
 
 </div>
